@@ -21,7 +21,7 @@ const Reviews = () => {
                     <div className="spacer-1"></div>
                     <div className="spacer-1"></div>
                     <h2 className="heading-style-h2">{data?.reviews_heading}</h2>
-                    <p class="text-size-medium">{data?.reviews_description}</p>
+                    <p className="text-size-medium">{data?.reviews_description}</p>
                   </div>
                 </div>
               </div>
