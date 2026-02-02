@@ -1,13 +1,10 @@
 import { useContext } from "react";
-import { Link, useParams } from "react-router-dom";
 import MicroContext from "../context/MicroContext";
 import Gallery from "../components/gallery";
 import LightBox from "../components/lightbox";
 import Reviews from "../components/reviews";
-import TrustedLogos from "../components/TrustedLogos";
 
 const Quote = () => {
-  const { page } = useParams();
   const { content } = useContext(MicroContext  );
   const {data:{site_id}} = useContext(MicroContext);
   const {data:{product}} = useContext(MicroContext);  

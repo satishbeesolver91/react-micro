@@ -1,21 +1,16 @@
 import { useContext } from "react";
-import { Link, NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import MicroContext from "../context/MicroContext";
 const Footer = () => {
   const {data:{company_name}} = useContext(MicroContext);
-  const {data:{phone_numbers}} = useContext(MicroContext);
   const {data:{hours_operation1}} = useContext(MicroContext);
   const {data:{hours_operation2}} = useContext(MicroContext);
   const {data:{locations}} = useContext(MicroContext);
   const {data:{gbp_link}} = useContext(MicroContext);
   const {page} = useParams();
 
-
   const { content } = useContext(MicroContext  );
   const data = content['home']
-  console.log(data);
-
-   
   
   return (
 
@@ -25,6 +20,7 @@ const Footer = () => {
         <div className="html-embed-6 w-embed w-iframe">
           <iframe
             src={gbp_link}
+            title={company_name}
             width="100%"
             height="100%"
             style={{ border: "0" }}

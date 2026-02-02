@@ -14,7 +14,7 @@ const Header = () => {
     setIsSidebarOpen(false);
   };
 
-  const {data:{company_name}} = useContext(MicroContext);
+  //const {data:{company_name}} = useContext(MicroContext);
   const { data:{phone_numbers} } = useContext(MicroContext);
   const {data:{site_id}} = useContext(MicroContext);
   const {data:{product}} = useContext(MicroContext);

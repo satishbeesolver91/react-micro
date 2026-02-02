@@ -4,7 +4,6 @@ import MicroContext from "../context/MicroContext";
 import LightBox from "../components/lightbox";
 import Gallery from "../components/gallery";
 import Reviews from "../components/reviews";
-import TrustedLogos from "../components/TrustedLogos";
 import FormattedContent from "../components/FormattedContent";
 
 const Choose = () => {
