@@ -122,9 +122,11 @@ console.log(data);
                   />
                 </div>
                 <div className="content2_content">
-                  <h2 className="heading-style-h1">
-                    {data?.content_2_heading}
-                  </h2>
+                  <div className="margin-bottom margin-small">
+                    <h2 className="heading-style-h1">
+                      {data?.content_2_heading}
+                    </h2>
+                  </div>
                   <div className="w-richtext">
                     <FormattedContent text={data?.content_2_description} />
                   </div>
