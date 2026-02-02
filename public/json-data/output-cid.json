@@ -1,0 +1,30 @@
+{
+    "roofing": {
+        "company_name": "123 Company",
+        "phone_numbers": {
+            "primary": "(123) 456-7899",
+            "secondary": ""
+        },
+        "locations": {
+            "location_1": "123 Main Street Anytown, ST  12345",
+            "location_2": "222 Sarasota Center Sarasota, Fl 34240",
+            "location_3": "Location 3"
+        },
+        "reviews": { 
+            "review_1": "Review 1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author_1": "Author 1",
+           
+            "review_2": "Review 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author_2": "Author 2",        
+            
+            "review_3": "Review 3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,",
+            "author_3": "Author 3"
+        },
+        
+        "hours_operation1": "Monday - Friday: 8:00 AM - 5:00 PM",
+        "hours_operation2": "Saturday - Sunday: Closed",
+        "gbp_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52947377.93644701!2d-161.95368458749272!3d35.90655046886533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sin!4v1767953994764!5m2!1sen!2sin",
+        "site_id": "3653246324636"
+    }
+
+}

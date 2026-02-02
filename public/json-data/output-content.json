@@ -1,0 +1,124 @@
+{
+    "roofing": {
+        "home": {
+            "product": "roofing",
+            "page_name": "home",
+            "meta_title": "Roofing | 123 Company",
+
+            "hero_image": "/assets/images/product-1/home/hero.webp",
+            "hero_heading": "test Roofing Comprehensive test",
+            "hero_description": "Free estimates and no trip charges!",
+            "form_heading": "Available 7 Days a Week & Most Holidays",
+            "form_description": "Request your free estimate today.",
+
+            "content_1_img": "/assets/images/product-1/home/content-one.webp",
+            "content_1_heading": "Your Premier Residential Garage Door Company",
+            "content_1_description": "When homeowners in your area want to upgrade curb appeal, long-term protection, and energy efficiency, siding replacement delivers the biggest impact. As a trusted local siding company, Window World of Central PA installs high-performance home siding designed for durability, efficiency, and lasting beauty. Our vinyl siding and composite siding options include:",
+
+            "special_cta_image": "/assets/images/product-1/home/cta-left.webp",
+            "special_offer_cta_heading": "Special Offers",
+            "special_offer_cta_description": "Learn about the deals we currently have available.",
+
+            "financing_cta_img": "/assets/images/product-1/home/cta-right.webp",
+            "financing_offer_cta_heading": "Financing Options",
+            "financing_offer_cta_description": "No Interest if paid in full in 18 months.",
+
+            "content_2_image": "/assets/images/product-1/home/content-two.webp",
+            "content_2_heading": "Elevating the Residential Garage Door Service Experience",
+            "content_2_description": "\"Anytime Garage Door is your one-stop destination for all residential garage door needs...\\nOur range of garage door services include:\\n - Residential garage door repair \u2013 broken springs, worn cables, etc.\\n - Garage door maintenance \u2013 \"\"lube and tune\"\" service.\\n - Garage door installation \u2013 doors from trusted manufacturers.\\n - Garage door openers \u2013 LiftMaster and more.\\nChoose Anytime Garage Door, where superior service meets affordability.\"",
+
+            "inspiration_gallery_heading": "Inspiration Gallery",
+            "inspiration_gallery_description": "Replacing your garage doors can change the look of your home or business!",
+            
+            "gallery_1": "/assets/images/product-1/gallery/one.webp",
+            "gallery_2": "/assets/images/product-1/gallery/two.webp",
+            "gallery_3": "/assets/images/product-1/gallery/three.webp",
+            "gallery_4": "/assets/images/product-1/gallery/four.webp",
+            "gallery_5": "/assets/images/product-1/gallery/five.webp",
+
+            "brands_we_trust_heading": "Brands We Trust",
+
+            "reviews_heading": "Check Out Our Testimonials",
+            "reviews_description": "See what our clients have to say about working with us!",
+
+            "footer_form_heading": "footer Get a Free Estimate",
+            "footer_form_description": "For Garage Door Repair, Maintenance, or Installation"
+            
+        },
+        "why-choose-us": {
+            "product": "roofing",
+            "page_name": "why-choose-us",
+            "meta_title": "Why Choose Us | 123 Company",
+
+            "hero_image": "/assets/images/product-1/why-choose-us/hero.webp",
+            "hero_heading": "Highly Skilled Roofing Experts You Can Trust ",
+            "hero_description": "Making Neighbors in Your Area Satisfied for Over 60 Years",
+            
+            "content_1_img": "/assets/images/product-1/why-choose-us/content-one.webp",
+            "content_1_heading": "Your Premier Residential Garage Door Company",
+            "content_1_description": "\"Anytime Garage Door is your one-stop destination for all residential garage door needs...\\nOur range of garage door services include:\\n - Residential garage door repair \u2013 broken springs, worn cables, etc.\\n - Garage door maintenance \u2013 \"\"lube and tune\"\" service.\\n - Garage door installation \u2013 doors from trusted manufacturers.\\n - Garage door openers \u2013 LiftMaster and more.\\nChoose Anytime Garage Door, where superior service meets affordability.\"",
+            
+            "special_cta_image": "/assets/images/product-1/why-choose-us/cta.webp",
+            "special_offer_cta_heading": "Special Offers",
+            "special_offer_cta_description": "Learn about the deals we currently have available.",
+            
+            "content_2_image": "/assets/images/product-1/why-choose-us/content-two.webp",
+            "content_2_heading": "Elevating the Residential Garage Door Service Experience",
+            "content_2_description": "\"Anytime Garage Door is your one-stop destination for all residential garage door needs...\\nOur range of garage door services include:\\n - Residential garage door repair \u2013 broken springs, worn cables, etc.\\n - Garage door maintenance \u2013 \"\"lube and tune\"\" service.\\n - Garage door installation \u2013 doors from trusted manufacturers.\\n - Garage door openers \u2013 LiftMaster and more.\\nChoose Anytime Garage Door, where superior service meets affordability.\""
+            
+        },
+        "financing": {
+            "product": "roofing",
+            "page_name": "financing",
+            "meta_title": "Financing | 123 Company",
+            
+            "hero_image": "/assets/images/product-1/financing/hero.webp",
+            "hero_heading": "(Financing) Highly Skilled Roofing Experts You Can Trust ",
+            "hero_description": "Making Neighbors in Your Area Satisfied for Over 60 Years",
+
+            "form_heading": "Don't Miss Out!",
+            "form_description": "Connell Roofing provides financing options to accommodate nearly any budget, making it more affordable than ever to pay for a roofing project. Fill out the form below to request additional information about our convenient payment plans."            
+            
+        },
+        "specials": {
+            "product": "roofing",
+            "page_name": "specials",
+            "meta_title": "Special Offers | 123 Company",
+            
+            "hero_image": "/assets/images/product-1/specials/hero.webp",
+            "hero_heading": "(Specials) Experts You Can Trust",
+            "hero_description": "Making Neighbors in Your Area Satisfied for Over 60 Years",
+
+            "form_heading": "Act Now!",
+            "form_description": "Connell Roofing provides financing options to accommodate nearly any budget, making it more affordable than ever to pay for a roofing project. Fill out the form below to request additional information about our convenient payment plans."
+        
+        },
+        "contact-us": {
+            "product": "roofing",
+            "page_name": "contact-us",
+            "meta_title": "Contact Us | 123 Company",
+            
+            "hero_image": "/assets/images/product-1/contact-us/hero.webp",
+            "hero_heading": "(Contact Us) Let\u2019s Get Started",
+            "hero_description": "Making Neighbors in Your Area Satisfied for Over 60 Year",
+
+            "form_heading": "Contact Us",
+            "form_description": "Connell Roofing provides financing options to accommodate nearly any budget, making it more affordable than ever to pay for a roofing project. Fill out the form below to request additional information about our convenient payment plans."
+            
+        },
+        "get-a-quote": {
+            "product": "roofing",
+            "page_name": "get-a-quote",
+            "meta_title": "Get a Quote | 123 Company",
+            
+            "hero_image": "/assets/images/product-1/get-a-quote/hero.webp",
+            "hero_heading": "(Get a Quote) Experts You Can Trust ",
+            "hero_description": "Making Neighbors in Your Area Satisfied for Over 60 Years",
+
+            "form_heading": "Get a Quote",
+            "form_description": "Connell Roofing provides financing options to accommodate nearly any budget, making it more affordable than ever to pay for a roofing project. Fill out the form below to request additional information about our convenient payment plans."
+        
+        }
+    }
+
+}

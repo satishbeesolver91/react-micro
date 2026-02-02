@@ -1,0 +1,57 @@
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useParams,
+} from "react-router-dom";
+import Home from "./pages/home";
+import Contact from "./pages/contact";
+import Financing from "./pages/financing";
+import Quote from "./pages/quote";
+import Specials from "./pages/specials";
+import Choose from "./pages/why-choose-us";
+import RootLayout from "./RootLayout";
+import LandingPage from "./pages/LandingPage";
+
+const router = createBrowserRouter([
+  {
+    element: <RootLayout />,
+    children: [
+      {
+        path: ":page",
+        element: <Home />,
+        children: [
+          {
+            index: true,
+            element: <LandingPage />,
+          },
+          {
+            path: "contact-us",
+            element: <Contact />,
+          },
+          {
+            path: "specials",
+            element: <Specials />,
+          },
+          {
+            path: "get-a-quote",
+            element: <Quote />,
+          },
+          {
+            path: "financing",
+            element: <Financing />,
+          },
+          {
+            path: "why-choose-us",
+            element: <Choose />,
+          },
+        ],
+      },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;
