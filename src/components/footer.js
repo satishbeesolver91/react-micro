@@ -4,7 +4,8 @@ import MicroContext from "../context/MicroContext";
 const Footer = () => {
   const {data:{company_name}} = useContext(MicroContext);
   const {data:{phone_numbers}} = useContext(MicroContext);
-  const {data:{hours_operation}} = useContext(MicroContext);
+  const {data:{hours_operation1}} = useContext(MicroContext);
+  const {data:{hours_operation2}} = useContext(MicroContext);
   const {data:{locations}} = useContext(MicroContext);
   const {data:{gbp_link}} = useContext(MicroContext);
   const {page} = useParams();
@@ -92,11 +93,13 @@ const Footer = () => {
                           <br />
                         </p>
                         <p>{locations?.location_1}<br/>
-                        <a href={`tel:+1${phone_numbers?.primary.replaceAll("-", "")}`}> {phone_numbers?.primary}</a><br/><br/>
+                        <br/>
                         <strong>Hours of Operation</strong> <br/>
-                       {hours_operation}</p>
+                        {hours_operation1}
+                       </p>
+                       
                         <p>
-                          Call us 24 hours a day, 7 days a week! <br />
+                          {hours_operation2}
                         </p>
                       </div>
                     </div>

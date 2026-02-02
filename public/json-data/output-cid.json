@@ -1,6 +1,7 @@
 {
     "roofing": {
-        "company_name": "123 Company",
+        "product": "Roofing",
+        "company_name": "123 Company", 
         "phone_numbers": {
             "primary": "(123) 456-7899",
             "secondary": ""

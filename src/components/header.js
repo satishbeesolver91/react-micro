@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, Link, useParams } from "react-router-dom";
 import MicroContext from "../context/MicroContext";
 
 
@@ -16,6 +16,8 @@ const Header = () => {
 
   const {data:{company_name}} = useContext(MicroContext);
   const { data:{phone_numbers} } = useContext(MicroContext);
+  const {data:{site_id}} = useContext(MicroContext);
+  const {data:{product}} = useContext(MicroContext);
   const { page } = useParams();
 
   return (
@@ -63,6 +65,18 @@ const Header = () => {
             }
 >
             </NavLink>
+
+            <Link
+            to={`${page}`}
+              className="navbar4_logo-link w-nav-brand w--current"
+            >
+             <img
+                loading="lazy"
+                src="/assets/images/main-logo.png"
+                alt=""
+                className="navbar_sticky-logo"
+              />
+            </Link>
             {/* <a
               href="#"
               aria-current="page"
@@ -77,16 +91,8 @@ const Header = () => {
               />
             </a> */}
             <div className="sticky-nav_special-offer">
-              <div
-                id="form-micro-sticky-anytime"
-                className="form-block-2 w-form"
-              >
-                 <div className="sticky-nav_special-offer">
-              <div data-input-classes="form-input" data-form-id="form-micro-sticky" data-opt-in="false" className="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="true" data-product="Micro" data-enable-address="false" data-button-classes="sticky-button" data-form-name="Sticky Form - Product" data-input-group-classes="" data-page-id="" data-submit-button-text="Get A Free Quote" data-spam-type="recaptchaV3" data-form-location="" data-thank-you-url="" data-enable-comments="false" data-site-id="608f97ef-1a26-4239-b2b7-7d473ad978hu" data-disclaimer="false">
-                <div></div>
-              </div>
-            </div>
-              </div>
+
+              <div data-input-classes="form-input" data-form-id="form-micro-sticky" data-opt-in="false" class="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="true" data-product="Webflow Micro" data-enable-address="false" data-button-classes="sticky-button" data-form-name={`Sticky Form - ${product}`} data-input-group-classes data-page-id data-submit-button-text="Get A Quote" data-spam-type="recaptchaV3" data-form-location data-thank-you-url data-enable-comments="false" data-site-id={site_id} data-disclaimer="false" data-v-app></div>
             </div>
           </div>
 
@@ -131,13 +137,13 @@ const Header = () => {
                   >
                     {phone_numbers?.primary}
                   </a>
-                  <div className="rich-company-info-2 text-color-white w-richtext">
+                  {/*<div className="rich-company-info-2 text-color-white w-richtext">
                     <p>
                       <strong> {company_name}</strong>
                       <br />
                       Call us 24 hours a day, 7 days a week!
                     </p>
-                  </div>
+                  </div>*/}
                 </div>
               </div>
             </nav>

@@ -9,6 +9,8 @@ import TrustedLogos from "../components/TrustedLogos";
 const Contact = () => {
   const { page } = useParams();
   const { content } = useContext(MicroContext  );
+  const {data:{site_id}} = useContext(MicroContext);
+  const {data:{product}} = useContext(MicroContext);  
   const data = content['contact-us']
   console.log(data);
   return (
@@ -54,7 +56,7 @@ const Contact = () => {
         <div className="padding-global">
           <div className="padding-section-large">
             <div className="text-stack-center">
-              <h2>{data?.form_header}</h2>
+              <h2>{data?.form_heading}</h2>
               <div className="hero-text text-align-center">
                 <p>
                   {data?.form_description}                
@@ -62,6 +64,13 @@ const Contact = () => {
               </div>
               <div className="spacer-1"></div>
             </div>
+
+            <div class="socius-form-wrap">
+              <div data-input-classes="form-input" data-form-id="form-micro-contact" data-opt-in="false" class="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="false" data-product="Webflow Micro" data-enable-address="false" data-button-classes="button" data-form-name={`Contact Form - ${product}`} data-input-group-classes data-page-id data-submit-button-text="Send Message" data-spam-type="recaptchaV3" data-form-location data-thank-you-url data-enable-comments="true" data-site-id={site_id} data-disclaimer="false" data-v-app></div>
+
+
+            </div>
+
           </div>
         </div>
       </section>

@@ -12,6 +12,8 @@ import TrustedLogos from "../components/TrustedLogos";
 const Specials = () => {
   const { page } = useParams();
   const { content } = useContext(MicroContext  );
+  const {data:{site_id}} = useContext(MicroContext);
+  const {data:{product}} = useContext(MicroContext);  
   const data = content['specials']
   console.log(data);
 
@@ -59,7 +61,7 @@ const Specials = () => {
         <div className="padding-global">
           <div className="padding-section-large">
             <div className="text-stack-center">
-              <h2>{data?.form_header}</h2>
+              <h2>{data?.form_heading}</h2>
               <div className="hero-text text-align-center">
                 <p>
                   {data?.form_description}
@@ -67,6 +69,12 @@ const Specials = () => {
               </div>
               <div className="spacer-1"></div>
             </div>
+
+            <div class="socius-form-wrap">
+              <div data-input-classes="form-input" data-form-id="form-micro-specials" data-opt-in="false" class="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="false" data-product="Webflow Micro" data-enable-address="false" data-button-classes="button" data-form-name={`Specials Form - ${product}`} data-input-group-classes data-page-id data-submit-button-text="Submit" data-spam-type="recaptchaV3" data-form-location data-thank-you-url data-enable-comments="false" data-site-id={site_id} data-disclaimer="false" data-v-app></div>
+
+            </div>
+
           </div>
         </div>
       </section>
