@@ -19,10 +19,18 @@ const TrustedLogos = () => {
          </div>
          <div className="spacer-2"></div>
          <div className="collection_trust-logos w-container">
-         <img sizes="(max-width: 700px) 100vw, 700px" loading="lazy" id="w-node-_833942f8-6514-a88b-6d83-900abe2b5e38-be2b5e2e" src="/assets/images/facebook_5stars.png" alt="" className="trust-logo_logo" />
-         <img loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 810px) 95vw, 770px" src="/assets/images/facebook_5stars.png" alt="" className="trust-logo_logo" />
-         <img loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939.9791870117188px" src="/assets/images/facebook_5stars.png" alt="" className="trust-logo_logo" />
-           <img loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939.9583740234375px" src="/assets/images/facebook_5stars.png" alt="" className="trust-logo_logo" />
+          <img sizes="(max-width: 700px) 100vw, 700px" loading="lazy" id="w-node-_833942f8-6514-a88b-6d83-900abe2b5e38-be2b5e2e" 
+          src={data?.brands_one}
+          alt="" className="trust-logo_logo" />
+
+          <img loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 810px) 95vw, 770px" 
+          src={data?.brands_two}
+          alt="" className="trust-logo_logo" />
+
+          <img loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 939.9791870117188px" 
+          src={data?.brands_three}
+          alt="" className="trust-logo_logo" />
+
          </div>
        </div>
      </div>
