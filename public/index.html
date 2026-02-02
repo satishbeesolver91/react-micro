@@ -52,66 +52,6 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
 
-   <!-- SOCIUS FORMS CONFIG -->
-
-<script>
-  
-// RECAPTCHA KEY
-window.recaptchaSiteKey = "6LeJ-6coAAAAAPXaC3VGV2W_axbB7fQv09m3CBWg";
-  
-// COUNTRY SELECTOR - UNCOMMENT TO USE
-/* window.selectCountries = ["us", "ca"]; */
-
-// SERVICE AREA ZIPS - UNCOMMENT TO USE
-/* window.serviceAreaZipCodes = ["33634", "35343"]; */
-  
-// PRODUCTS OF INTEREST (FORM DROPDOWN/SELECT)
-window.productOfInterest=["Service 1", "Service 2", "Service 3", "Service 4"];
-window.preselectedProduct="Service 1";
-
-// DISCLAIMER & OPT-IN MESSAGE
-  
-window.formOptInMessage="I agree to the terms";
-window.formDisclaimer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
- 
-window.hideDisclaimerUntilClicked = false;
-window.disclaimerAfterButton = false;
-  
-// REDIRECTION - THANK YOU
-/* window.thankYouUrl=""; */
-/* window.redirectToThanksWithQueryParams = false; */
-  
-</script>
-
-<!-- END SOCIUS FORMS CONFIG -->
-
-<!-- Enable Cookie tracking / City Swapping UNCOMMENT TO USE-->
-
-<script>
-window.phoneMap = {
-  ppc: "000-000-0000"
-
-};
-window.basePhone = '000-000-0000';
-</script>
-
-<script>
-window.cityMap = {
-  me: "Maine",
-  ma: "Massachusetts",
-  nh: "New Hampshire"
-};
-
-"use strict";(()=>{var u={ppcSource:"source",referrer:"referer",city:"city"},i={ppcSource:"source",referrer:"referer",city:"city"},a={ppcSource:".ppc-source",referrer:".referer"};function f(e,n){return Object.fromEntries(new URLSearchParams(e).entries())[n]}function m(e){return!!e}function d(e){let[n,r]=e.split("=").map(t=>{try{return decodeURIComponent(t.trim())}catch(o){return null}});return r?[n,r]:null}function y(e){return Object.fromEntries(e.split(";").map(d).filter(m))}function p(e,n){return y(e)[n]}function S(e,n){let r=new Date(new Date().getTime()+2592e6).toUTCString();return[`${encodeURIComponent(e)}=${encodeURIComponent(n)}`,"path=/","domain=",`expires=${r}`].join("; ")}function h(e){return e.tagName.toLowerCase()==="input"}function k(e,n){!n||document.querySelectorAll(e).forEach(r=>{!h(r)||(r.value=n)})}function g(e,n,r){let{cookieValue:t,queryParamValue:o}=n;return t?r(t)?t:null:o&&r(o)?(document.cookie=S(e,o),o):null}function s(e){var r;if(!e)return null;let n=window.cityMap;return(r=n==null?void 0:n[e])!=null?r:null}function N(e){var r;if(!e)return null;let n=window.phoneMap;return(r=n==null?void 0:n[e])!=null?r:null}function l(e){let{inputSelector:n,queryParamName:r,cookieName:t}=e,o=f(window.location.search,r),c=p(document.cookie,t);return k(n,c||o),g(t,{cookieValue:c,queryParamValue:o},()=>!0)}function w(e){document.querySelectorAll("p,h1,h2,h3,h4,h5,h6").forEach(n=>{n.innerHTML=n.innerHTML.replace(/your area/gi,e)})}function P(e){let n=window.basePhone;!n||document.querySelectorAll('a[href^="tel:"]').forEach(r=>{r.innerHTML=r.innerHTML.replace(n,e),r.setAttribute("href",`tel:${e}`)})}function C(e){if(!e)return;let n=N(e);!n||P(n)}function I(){document.addEventListener("DOMContentLoaded",()=>{let e=g(i.city,{cookieValue:p(document.cookie,i.city),queryParamValue:f(window.location.search,u.city)},t=>!!s(t)),n=s(e);e&&n&&w(n);let r=l({inputSelector:a.ppcSource,queryParamName:u.ppcSource,cookieName:i.ppcSource});l({inputSelector:a.referrer,queryParamName:u.referrer,cookieName:i.referrer}),C(r)})}typeof window<"u"&&I();})();
-</script>
-
-<!--END CITY SWAP -->
-
-<!-- Please keep this css code to improve the font quality-->
-
-
-
-
     <div id="root"></div>
     
     <script
