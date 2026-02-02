@@ -91,7 +91,7 @@ const Header = () => {
             </a> */}
             <div className="sticky-nav_special-offer">
 
-              <div data-input-classes="form-input" data-form-id="form-micro-sticky" data-opt-in="false" class="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="true" data-product="Webflow Micro" data-enable-address="false" data-button-classes="sticky-button" data-form-name={`Sticky Form - ${product}`} data-input-group-classes data-page-id data-submit-button-text="Get A Quote" data-spam-type="recaptchaV3" data-form-location data-thank-you-url data-enable-comments="false" data-site-id={site_id} data-disclaimer="false" data-v-app></div>
+              <div data-input-classes="form-input" data-form-id="form-micro-sticky" data-opt-in="false" className="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="true" data-product="Webflow Micro" data-enable-address="false" data-button-classes="sticky-button" data-form-name={`Sticky Form - ${product}`} data-input-group-classes data-page-id data-submit-button-text="Get A Quote" data-spam-type="recaptchaV3" data-form-location data-thank-you-url data-enable-comments="false" data-site-id={site_id} data-disclaimer="false" data-v-app></div>
             </div>
           </div>
 
