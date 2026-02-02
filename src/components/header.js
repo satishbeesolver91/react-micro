@@ -35,10 +35,9 @@ const Header = () => {
                   ></path>
                 </svg>
               </div>
-              <a
-                href={`tel:+1${phone_numbers?.primary.replaceAll("-", "")}`}
-                className="is-phone"
-              >
+            
+              <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
+                    className="is-phone">  
                 {phone_numbers?.primary}
               </a>
             </div>
@@ -131,10 +130,9 @@ const Header = () => {
                 </NavLink>
 
                 <div className="sidebar_menu-wrapper">
-                  <a
-                    href={`tel:+1${phone_numbers?.primary.replaceAll("-", "")}`}
-                    className="button is-alternate max-width-full w-button"
-                  >
+                  
+                  <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
+                    className="button is-alternate max-width-full w-button">
                     {phone_numbers?.primary}
                   </a>
                   {/*<div className="rich-company-info-2 text-color-white w-richtext">
@@ -149,12 +147,11 @@ const Header = () => {
             </nav>
           </div>
 
-         <div
-  className="navbar4_menu-button w-nav-button"
-  onClick={toggleSidebar}
-  role="button"
-  aria-label="menu"
->
+          <div
+            className="navbar4_menu-button w-nav-button"
+            onClick={toggleSidebar}
+            role="button"
+            aria-label="menu">
 
             <div className="menu-icon4">
               <div className="menu-icon4_wrapper">
@@ -186,10 +183,9 @@ const Header = () => {
                   ></path>
                 </svg>
               </div>
-              <a
-                href={`tel:+1${phone_numbers?.primary.replaceAll("-", "")}`}
-                className="is-phone"
-              >
+              
+              <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
+                className="is-phone">
                 <strong>{phone_numbers?.primary}</strong>
               </a>
             </div>
@@ -244,7 +240,9 @@ const Header = () => {
               </NavLink>
 
               <div className="navbar1_menu-buttons">
-                <a href="#" className="button is-small mobile-menu w-button">
+                
+                  <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
+                    className="button is-small mobile-menu w-button">
                   {phone_numbers?.primary}
                 </a>
               </div>
