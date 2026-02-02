@@ -1,7 +1,6 @@
 import {
   createBrowserRouter,
   RouterProvider,
-  useParams,
 } from "react-router-dom";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
@@ -11,6 +10,7 @@ import Specials from "./pages/specials";
 import Choose from "./pages/why-choose-us";
 import RootLayout from "./RootLayout";
 import LandingPage from "./pages/LandingPage";
+import Product from "./pages/Product";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +43,10 @@ const router = createBrowserRouter([
           {
             path: "why-choose-us",
             element: <Choose />,
+          },
+          {
+            path: "roofing",
+            element: <Product />,
           },
         ],
       },

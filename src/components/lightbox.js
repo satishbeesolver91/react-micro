@@ -1,13 +1,8 @@
-import { useContext } from "react";
 import { Link, useParams } from "react-router-dom";
-import MicroContext from "../context/MicroContext";
-
 import { useEffect } from "react";
 import { destroyLightboxSplide, initLightboxSplide } from "./required";
 
 const LightBox = () => {
-
-
 
   useEffect(() => {
     initLightboxSplide();
@@ -17,9 +12,7 @@ const LightBox = () => {
     };
   }, []);
   const { page } = useParams();
-  const { content } = useContext(MicroContext);
-  const data = content['home']
-
+   
   return (
     <div className="custom-lightbox">
       <div className="padding-global">
