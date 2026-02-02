@@ -90,12 +90,15 @@ const LandingPage = () => {
                     </h1>
                   </div>
 
-                  <div className="w-richtext">
-                    <div>
-                      
-                      <FormattedContent text={data?.content_1_description} />
-                    </div>
-                    
+                     <div className="w-richtext">
+                          {data?.content_1_description && (
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: data.content_1_description,
+                        }}
+                      />
+                    )}
+
                     
                   </div>
 
@@ -215,10 +218,15 @@ const LandingPage = () => {
                     </h2>
                   </div>  
 
-                  <div className="w-richtext">
-                    <div>
-                      <FormattedContent text={data?.content_2_description} />
-                    </div>
+                    <div className="w-richtext">
+                          {data?.content_1_description && (
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: data.content_1_description,
+                        }}
+                      />
+                    )}
+
                     
                   </div>
 

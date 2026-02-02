@@ -99,6 +99,11 @@ const Header = () => {
 
             <nav role="navigation" className="sidebar_menu w-nav-menu">
               <div className="sidebar_menu-wrapper">
+                   <NavLink to={`/${page}/product`} className={({ isActive }) =>
+    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+  } onClick={closeSidebar}>
+                  <div>Product</div>
+                </NavLink>
                 <NavLink to={`/${page}/why-choose-us`} className={({ isActive }) =>
     `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
   } onClick={closeSidebar}>
@@ -218,6 +223,11 @@ const Header = () => {
               role="navigation"
               className={`navbar1_menu is-page-height-tablet w-nav-menu ${isSidebarOpen ? "open" : ""}`}
             >
+                <NavLink to={`/${page}/product`}  className={({ isActive }) =>
+    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+  } onClick={closeSidebar}>
+                Product
+              </NavLink>
               <NavLink to={`/${page}/why-choose-us`}  className={({ isActive }) =>
     `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
   } onClick={closeSidebar}>

@@ -45,7 +45,7 @@ const router = createBrowserRouter([
             element: <Choose />,
           },
           {
-            path: "roofing",
+            path: "product",
             element: <Product />,
           },
         ],
