@@ -4,6 +4,7 @@ import MicroContext from "../context/MicroContext";
 import LightBox from "../components/lightbox";
 import Gallery from "../components/gallery";
 import Reviews from "../components/reviews";
+import { Helmet } from "react-helmet-async";
 
 const Product = () => {
 const { page } = useParams();
@@ -16,6 +17,9 @@ const data = content['product']
 console.log(data);
   return (
     <>
+    <Helmet>
+        <title>{data?.meta_title}</title>
+      </Helmet>
       <div className="section_micro-hero">
         <div className="hero-content-container">
           <div className="padding-global">

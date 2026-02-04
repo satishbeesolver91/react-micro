@@ -3,7 +3,7 @@
         "home": {
             "product": "roofing",
             "page_name": "home",
-            "meta_title": "Roofing | 123 Company", 
+            "meta_title": "Roofing | ABC Company", 
 
             "hero_image": "/assets/images/product-1/home/hero.webp",
             "hero_heading": "Roofing Comprehensive Your area.",
@@ -53,7 +53,7 @@
         "product": {
             "product": "roofing",
             "page_name": "why-choose-us",
-            "meta_title": "Why Choose Us | 123 Company",
+            "meta_title": "Product | ABC Company",
 
             "hero_image": "/assets/images/product-1/why-choose-us/hero.webp",
             "hero_heading": "Highly Skilled Roofing Experts You Can Trust ",
@@ -75,7 +75,7 @@
         "why-choose-us": {
             "product": "roofing",
             "page_name": "why-choose-us",
-            "meta_title": "Why Choose Us | 123 Company",
+            "meta_title": "Why Choose Us | ABC Company",
 
             "hero_image": "/assets/images/product-1/why-choose-us/hero.webp",
             "hero_heading": "Highly Skilled Roofing Experts You Can Trust ",
@@ -97,7 +97,7 @@
         "financing": {
             "product": "roofing",
             "page_name": "financing",
-            "meta_title": "Financing | 123 Company",
+            "meta_title": "Financing | ABC Company",
             
             "hero_image": "/assets/images/product-1/financing/hero.webp",
             "hero_heading": "(Financing) Highly Skilled Roofing Experts You Can Trust ",
@@ -110,7 +110,7 @@
         "specials": {
             "product": "roofing",
             "page_name": "specials",
-            "meta_title": "Special Offers | 123 Company",
+            "meta_title": "Special Offers | ABC Company",
             
             "hero_image": "/assets/images/product-1/specials/hero.webp",
             "hero_heading": "(Specials) Experts You Can Trust",
@@ -123,7 +123,7 @@
         "contact-us": {
             "product": "roofing",
             "page_name": "contact-us",
-            "meta_title": "Contact Us | 123 Company",
+            "meta_title": "Contact Us | ABC Company",
             
             "hero_image": "/assets/images/product-1/contact-us/hero.webp",
             "hero_heading": "(Contact Us) Let\u2019s Get Started",
@@ -136,7 +136,7 @@
         "get-a-quote": {
             "product": "roofing",
             "page_name": "get-a-quote",
-            "meta_title": "Get a Quote | 123 Company",
+            "meta_title": "Get a Quote | ABC Company",
             
             "hero_image": "/assets/images/product-1/get-a-quote/hero.webp",
             "hero_heading": "(Get a Quote) Experts You Can Trust ",

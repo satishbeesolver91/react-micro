@@ -4,7 +4,7 @@ import MicroContext from "../context/MicroContext";
 import LightBox from "../components/lightbox";
 import Gallery from "../components/gallery";
 import Reviews from "../components/reviews";
-import FormattedContent from "../components/FormattedContent";
+import { Helmet } from "react-helmet-async";
 
 const Choose = () => {
 const { page } = useParams();
@@ -12,11 +12,13 @@ const { content } = useContext(MicroContext  );
 const {data:{site_id}} = useContext(MicroContext);
 const {data:{product}} = useContext(MicroContext);  
 
-const data = content['why-choose-us']
+const data = content['why-choose-us'];
 
-console.log(data);
   return (
     <>
+    <Helmet>
+          <title>{data?.meta_title}</title>
+        </Helmet>
       <div className="section_micro-hero">
         <div className="hero-content-container">
           <div className="padding-global">

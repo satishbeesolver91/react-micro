@@ -3,6 +3,7 @@ import MicroContext from "../context/MicroContext";
 import Gallery from "../components/gallery";
 import LightBox from "../components/lightbox";
 import Reviews from "../components/reviews";
+import { Helmet } from "react-helmet-async";
 
 const Quote = () => {
   const { content } = useContext(MicroContext  );
@@ -11,6 +12,9 @@ const Quote = () => {
   const data = content['get-a-quote']
     return (  
         <>
+        <Helmet>
+            <title>{data?.meta_title}</title>
+          </Helmet>
         <div className="section_micro-hero">
           <div className="hero-content-container">
             <div className="padding-global">
