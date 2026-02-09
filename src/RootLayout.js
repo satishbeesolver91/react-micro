@@ -10,30 +10,36 @@ const RootLayout = () => {
   const [content, setContent] = useState({});
   const { page } = useParams();
 
-  const fetchCidData = async () => {
-    const request = await fetch("/json-data/output-cid.json");
-    const result = await request.json();
-    setData(result[page]);
-  };
-  const fetchContentData = async () => {
-    const request = await fetch("/json-data/output-content.json");
-    const result = await request.json();
-    setContent(result[page]);
-  };
-
+  const currentPage = page || "roofing";
 
   useEffect(() => {
-    fetchCidData();
-    fetchContentData();
-  }, []);
+    const loadJson = async () => {
+      try {
+        // CID Data
+        const cidRes = await fetch("/json-data/output-cid.json");
+        const cidJson = await cidRes.json();
+        setData(cidJson[currentPage] || {});
+
+        // Content Data
+        const contentRes = await fetch("/json-data/output-content.json");
+        const contentJson = await contentRes.json();
+        setContent(contentJson[currentPage] || {});
+      } catch (error) {
+        console.error("JSON loading error:", error);
+        setData({});
+        setContent({});
+      }
+    };
+
+    loadJson();
+  }, [currentPage]); 
+
   return (
-    <MicroContext.Provider value={{data, content}}>
+    <MicroContext.Provider value={{ data, content }}>
       <LightBox />
       <div className="page-wrapper">
         <Header />
-
         <Outlet />
-
         <Footer />
       </div>
     </MicroContext.Provider>

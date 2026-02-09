@@ -11,10 +11,15 @@ import Choose from "./pages/why-choose-us";
 import RootLayout from "./RootLayout";
 import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
+import MicroList from "./pages/MicroList";
 //import useSociusForm from "./components/SociusForm";
 
 const router = createBrowserRouter([
-  {
+    {
+      path: "/",
+      element: <MicroList />,
+    },
+    {    
     element: <RootLayout />,
     children: [
       {
