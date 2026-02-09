@@ -11,6 +11,7 @@ import Choose from "./pages/why-choose-us";
 import RootLayout from "./RootLayout";
 import LandingPage from "./pages/LandingPage";
 import Product from "./pages/Product";
+//import useSociusForm from "./components/SociusForm";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  //useSociusForm();
   return <RouterProvider router={router} />;
 }
 
