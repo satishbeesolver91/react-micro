@@ -5,15 +5,15 @@ import Gallery from "../components/gallery";
 import LightBox from "../components/lightbox";
 import Reviews from "../components/reviews";
 import TrustedLogos from "../components/TrustedLogos";
-import SociusForm from "../components/SociusForm";
+//import SociusForm from "../components/SociusForm";
 import { Helmet } from "react-helmet-async";
 
 
 const LandingPage = () => {
   const { page } = useParams();
   const { content } = useContext(MicroContext);
-  // const {data:{site_id}} = useContext(MicroContext);
-  // const {data:{product}} = useContext(MicroContext);  
+  const {data:{site_id}} = useContext(MicroContext);
+  const {data:{product}} = useContext(MicroContext);  
   const data = content['home'];
 
   return (
@@ -59,13 +59,13 @@ const LandingPage = () => {
                       Contact Us
                     </Link>
 
-                  <SociusForm product="Roofing" site_id="3653246324636" />
+                  
 
-                    {/* <div className="socius-form-wrap hero">
+                    <div className="socius-form-wrap hero">
                       <div data-input-classes="form-input" data-form-id="form-micro-quote" data-opt-in="false" className="baseform w-embed" data-enable-product-selector="false" data-sticky-first-last-name="false" data-hide-labels="true" data-sticky="false" data-product="Micro" data-enable-address="false" data-button-classes="button" data-form-name={`Hero Form - ${product}`} data-input-group-classes="" data-page-id="" data-submit-button-text="Submit" data-spam-type="recaptchaV3" data-form-location="" data-thank-you-url="" data-enable-comments="false" data-site-id={site_id} data-disclaimer="false">
                       <div></div>
                       </div>
-                    </div> */}
+                    </div>
                   
                 </div>
               </div>
