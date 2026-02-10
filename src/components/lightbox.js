@@ -35,7 +35,7 @@ const LightBox = () => {
               <Link
                 to={`/${page}/get-quote`}
                   className="button is-accent w-button"
-              ></Link>
+              >Get a Quote</Link>
               {/* <a href="product/get-a-quote.php" className="button is-accent w-button">Submit</a> */}
             </div>
           

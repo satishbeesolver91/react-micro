@@ -8793,3 +8793,17 @@ figcaption {
   font-style: normal;
   font-display: swap;
 }
+.hero-text p{ text-shadow: none !important;}
+@media(max-width:991px){
+  .padding-section-small {
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+.hero-text p{color:var(--colors--black);}
+.hero-content-container .padding-section-large{
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+p.hero-text.text-color-white.text-shadow{font-size: 1.4rem !important; text-align: center;}
+.text-size-medium.text-color-white.hero-subtitle .bold-text{font-size: 1.4rem !important;}
+}

@@ -10,6 +10,8 @@ const {
   hours_operation2,
   locations,
   gbp_link,
+  footer_form_heading,
+  footer_form_description
 } = data;
 
 const { page } = useParams();
@@ -41,10 +43,10 @@ const pageData = content?.[currentPage] || {};
           <div className="form_header-2 text-align-center">
             <div className="form-header-wrapper">
               <div className="form-header_line-2 heading-style-h3 text-color-white">
-                {pageData?.footer_form_heading}
+                {footer_form_heading}
               </div>
               <div className="form-header_line-3">
-               {pageData?.footer_form_description}
+               {footer_form_description}
               </div>
             </div>
 
