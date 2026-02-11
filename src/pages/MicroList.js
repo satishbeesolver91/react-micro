@@ -6,7 +6,7 @@ const MicroList = () => {
 
   useEffect(() => {
     const loadKeys = async () => {
-      const res = await fetch("/json-data/output-content.json");
+      const res = await fetch("/json-data/output-cid.json");
       const json = await res.json();
 
       const keys = Object.keys(json);
