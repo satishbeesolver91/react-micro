@@ -14,6 +14,7 @@ const LandingPage = () => {
   const {data:{site_id}} = useContext(MicroContext);
   const {data:{product}} = useContext(MicroContext);  
   const data = content['home'];
+  //console.log(content)
 
   return (
     <>

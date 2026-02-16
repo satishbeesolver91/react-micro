@@ -14,7 +14,13 @@ const Header = () => {
     setIsSidebarOpen(false);
   };
 
-const { data } = useContext(MicroContext) || {};
+const { data, content } = useContext(MicroContext) || {};
+//console.log(content?.product?.page_name);
+const page_name = content?.product?.page_name;
+const why_choose_name = content?.['why-choose-us']?.page_name;
+const financing_name = content?.financing?.page_name;
+const specials_name = content?.specials?.page_name;
+const contact_name = content?.['contact-us']?.page_name;
 
 const phone_numbers = data?.phone_numbers;
 const site_id = data?.site_id;
@@ -100,41 +106,50 @@ const product = data?.product;
 
             <nav role="navigation" className="sidebar_menu w-nav-menu">
               <div className="sidebar_menu-wrapper">
-                   <NavLink to={`/${page}/product`} className={({ isActive }) =>
-    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
-                  <div>Product</div>
+               {page_name && (
+                   <NavLink to={`/${page}/${page_name}`} className={({ isActive }) =>
+                      `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+                    } onClick={closeSidebar}>
+                  <div>{page_name.charAt(0).toUpperCase() + page_name.slice(1)}</div>
                 </NavLink>
+               )}
+               {why_choose_name && (
                 <NavLink to={`/${page}/why-choose-us`} className={({ isActive }) =>
-    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
+                    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+                  } onClick={closeSidebar}>
                   <div>Why Choose Us</div>
                 </NavLink>
+                 )}
+                  {financing_name && (
                 <NavLink
                   to={`/${page}/financing`}
                 className={({ isActive }) =>
-    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
-  }onClick={closeSidebar}
+                  `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+                }onClick={closeSidebar}
                 >
                   <div>Financing</div>
                 </NavLink>
+                 )}
+                  {specials_name && (
                 <NavLink
                   to={`/${page}/specials`}
                   className={({ isActive }) =>
-    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}
+                  `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+                } onClick={closeSidebar}
                 >
                   <div>Special Offers</div>
                 </NavLink>
+                )}
+                {contact_name && (
                 <NavLink
                   to={`/${page}/contact-us`}
                   className={({ isActive }) =>
-    `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}
+                  `sidebar-menu-link-text sidebar_menu-link ${isActive ? "w--current" : ""}`
+                } onClick={closeSidebar}
                 >
                   <div>Contact&nbsp;Us</div>
                 </NavLink>
-
+                )}
                 <div className="sidebar_menu-wrapper">
                   
                   <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
@@ -224,32 +239,41 @@ const product = data?.product;
               role="navigation"
               className={`navbar1_menu is-page-height-tablet w-nav-menu ${isSidebarOpen ? "open" : ""}`}
             >
-                <NavLink to={`/${page}/product`}  className={({ isActive }) =>
-    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
-                Product
+               {page_name && (
+                <NavLink to={`/${page}/${page_name}`}  className={({ isActive }) =>
+              `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+            } onClick={closeSidebar}>
+                {page_name.charAt(0).toUpperCase() + page_name.slice(1)}
               </NavLink>
+               )}
+               {why_choose_name && (
               <NavLink to={`/${page}/why-choose-us`}  className={({ isActive }) =>
-    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
+                `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+              } onClick={closeSidebar}>
                 Why Choose Us
               </NavLink>
+               )}
+               {financing_name && (
               <NavLink to={`/${page}/financing`}  className={({ isActive }) =>
-    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
+              `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+            } onClick={closeSidebar}>
                 Financing
               </NavLink>
+               )}
+                {specials_name && (
               <NavLink to={`/${page}/specials`}  className={({ isActive }) =>
-    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
+                `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+              } onClick={closeSidebar}>
                 Special Offers
               </NavLink>
+               )}
+                {contact_name && (
               <NavLink to={`/${page}/contact-us`}  className={({ isActive }) =>
-    `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
-  } onClick={closeSidebar}>
+                  `navbar1_link w-nav-link ${isActive ? "w--current" : ""}`
+                } onClick={closeSidebar}>
                 Contact Us
               </NavLink>
-
+              )}
               <div className="navbar1_menu-buttons">
                 
                   <a href={`tel:+1${phone_numbers?.primary.replace(/[()\-\s]/g, "")}`}
@@ -259,12 +283,11 @@ const product = data?.product;
               </div>
             </nav>
             <div
-  className="navbar1_menu-button w-nav-button"
-  onClick={toggleSidebar}
-  role="button"
-  aria-label="menu"
->
-
+              className="navbar1_menu-button w-nav-button"
+              onClick={toggleSidebar}
+              role="button"
+              aria-label="menu"
+            >
               <div className="menu-icon1">
                 <div className="menu-icon1_line-top"></div>
                 <div className="menu-icon1_line-middle">
@@ -282,8 +305,8 @@ const product = data?.product;
         </div>
       </div>
       {isSidebarOpen && (
-  <div className="sidebar-overlay" onClick={closeSidebar}></div>
-)}
+        <div className="sidebar-overlay" onClick={closeSidebar}></div>
+      )}
     </header>
   );
 };

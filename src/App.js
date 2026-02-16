@@ -2,6 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import Financing from "./pages/financing";
@@ -50,7 +51,7 @@ const router = createBrowserRouter([
             element: <Choose />,
           },
           {
-            path: "product",
+            path: ":productPage",
             element: <Product />,
           },
         ],

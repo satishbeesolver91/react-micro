@@ -52,7 +52,7 @@
         },
         "product": {
             "product": "roofing",
-            "page_name": "why-choose-us",
+            "page_name": "roofing",
             "meta_title": "Product | ABC Company",
 
             "hero_image": "/assets/images/product-1/why-choose-us/hero.webp",
@@ -200,7 +200,7 @@
         },
         "product": {
             "product": "window",
-            "page_name": "why-choose-us",
+            "page_name": "window",
             "meta_title": "Product | ABC Company",
 
             "hero_image": "/assets/images/product-2/why-choose-us/hero.webp",

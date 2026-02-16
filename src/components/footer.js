@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import MicroContext from "../context/MicroContext";
 const Footer = () => {
-const { data = {} } = useContext(MicroContext) || {};
+const { data, content } = useContext(MicroContext) || {};
 
 const {
   company_name,
@@ -15,12 +15,14 @@ const {
 } = data;
 
 const { page } = useParams();
+const page_name = content?.product?.page_name;
+const why_choose_name = content?.['why-choose-us']?.page_name;
+const financing_name = content?.financing?.page_name;
+const specials_name = content?.specials?.page_name;
+const contact_name = content?.['contact-us']?.page_name;
+const quote_name = content?.['get-a-quote']?.page_name;
 
-// // get current page content
-// const currentPage = page || "roofing";
-// const pageData = content?.[currentPage] || {};
 
-  
   return (
 
     <>
@@ -111,7 +113,16 @@ const { page } = useParams();
                     <div className="w-layout-grid footer-simple_link-list">
                       {" "}
                       <div></div>
-
+                        {page_name && (
+                       <NavLink
+                          to={`/${page}/${page_name}`}
+                          className={({ isActive }) =>
+                            `footer-simple_link text-color-black ${isActive ? "w--current" : ""}`
+                          }
+                        >{page_name.charAt(0).toUpperCase() + page_name.slice(1)}
+                      </NavLink>
+                        )}
+                      {why_choose_name && (
                       <NavLink
                           to={`/${page}/why-choose-us`}
                           className={({ isActive }) =>
@@ -119,26 +130,35 @@ const { page } = useParams();
                           }
                         >Why Choose Us
                       </NavLink>
+                       )}
+                      {financing_name && (
                       <NavLink to={`/${page}/financing`}  className={({ isActive }) =>
                           `footer-simple_link text-color-black ${isActive ? "w--current" : ""}`
                         }>
                                               Financing
                       </NavLink>
+                      )}
+                      {specials_name && (
                       <NavLink to={`/${page}/specials`}  className={({ isActive }) =>
                           `footer-simple_link text-color-black ${isActive ? "w--current" : ""}`
                         }>
                                     Special Offers
                       </NavLink>
+                       )}
+                      {contact_name && (
                       <NavLink to={`/${page}/contact-us`}  className={({ isActive }) =>
                           `footer-simple_link text-color-black ${isActive ? "w--current" : ""}`
                         }>
                             Contact Us
                       </NavLink>
+                       )}
+                      {quote_name && (
                       <NavLink to={`/${page}/get-a-quote`}  className={({ isActive }) =>
                           `footer-simple_link text-color-black ${isActive ? "w--current" : ""}`
                         }>
                           Get a Quote
                       </NavLink>
+                      )}
                     </div>
                   </div>
                 </div>
