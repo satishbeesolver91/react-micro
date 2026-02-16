@@ -5,7 +5,7 @@ const TrustedLogos = () => {
 
   const { content } = useContext(MicroContext  );
   const data = content['home']
-  console.log(data);
+  //console.log(data);
 
   return (
     <div className="section_trust-logos">

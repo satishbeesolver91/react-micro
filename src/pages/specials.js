@@ -11,7 +11,7 @@ const Specials = () => {
   const {data:{site_id}} = useContext(MicroContext);
   const {data:{product}} = useContext(MicroContext);  
   const data = content['specials']
-  console.log(data);
+  //console.log(data);
 
   return (
     <>

@@ -6,7 +6,7 @@ const Reviews = () => {
  const {data:{reviews}} = useContext(MicroContext);
  const { content } = useContext(MicroContext  );
  const data = content['home']
- console.log(data);
+ //console.log(data);
   
   return (
     <section  className="section_ratings-reviews background-color-primary">

@@ -5,7 +5,6 @@ import Gallery from "../components/gallery";
 import LightBox from "../components/lightbox";
 import Reviews from "../components/reviews";
 import TrustedLogos from "../components/TrustedLogos";
-//import SociusForm from "../components/SociusForm";
 import { Helmet } from "react-helmet-async";
 
 

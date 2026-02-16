@@ -10,7 +10,7 @@ const Contact = () => {
   const {data:{site_id}} = useContext(MicroContext);
   const {data:{product}} = useContext(MicroContext);  
   const data = content['contact-us']
-  console.log(data);
+  //console.log(data);
   return (
     <>
     <Helmet>

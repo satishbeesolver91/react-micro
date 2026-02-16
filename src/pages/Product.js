@@ -14,7 +14,7 @@ const {data:{product}} = useContext(MicroContext);
 
 const data = content['product']
 
-console.log(data);
+//console.log(data);
   return (
     <>
     <Helmet>

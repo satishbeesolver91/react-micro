@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavLink, useParams } from "react-router-dom";
 import MicroContext from "../context/MicroContext";
 const Footer = () => {
-const { data = {}, content = {} } = useContext(MicroContext) || {};
+const { data = {} } = useContext(MicroContext) || {};
 
 const {
   company_name,
@@ -16,9 +16,9 @@ const {
 
 const { page } = useParams();
 
-// get current page content
-const currentPage = page || "roofing";
-const pageData = content?.[currentPage] || {};
+// // get current page content
+// const currentPage = page || "roofing";
+// const pageData = content?.[currentPage] || {};
 
   
   return (
